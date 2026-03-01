@@ -60,7 +60,7 @@ function startGame() {
 function endGame() {
   document.querySelectorAll('.mushroom').forEach(m => m.remove());
 
-  if (score >= 12) {
+  if (score >= 8) {
     resultDisplay.textContent = '🎉 クリア！あつしからご褒美がもらえるよ 🎉';
     resultDisplay.style.fontSize = '48px';
     resultDisplay.style.color = 'green';
@@ -74,3 +74,4 @@ function endGame() {
 }
 
 startButton.addEventListener('click', startGame);
+
