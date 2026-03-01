@@ -5,7 +5,7 @@ const resultDisplay = document.getElementById('result');
 const startButton = document.getElementById('start-btn');
 
 let score = 0;
-let timeLeft = 10;
+let timeLeft = 15;
 let gameInterval;
 let timerInterval;
 
@@ -37,7 +37,7 @@ function spawnMushroom() {
 function startGame() {
   // 初期化
   score = 0;
-  timeLeft = 10;
+  timeLeft = 15;
   scoreDisplay.textContent = score;
   timerDisplay.textContent = `残り時間: ${timeLeft}秒`;
   resultDisplay.textContent = '';
@@ -74,4 +74,5 @@ function endGame() {
 }
 
 startButton.addEventListener('click', startGame);
+
 
